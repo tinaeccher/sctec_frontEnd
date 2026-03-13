@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><p align="center">  Aplicando CSS em uma página HTML 
+    <img src="css.logo].png" alt="LogoCSS" width="70" height="50" style="float: Left; margin: 5px;" title="LogoCSS">
+    </h1><br><hr></p>
+   <p>O Termo em inglês CSS significa <strong>Cascading Style Sheets (Folhas de Estilo em Cascata)</strong>.<br>
+    Assim como a HTML, não é uma linguagem de programação. CSS é uma linguagem de folha de estilos usada amplamente na web e criada com o propósito principal de estilizar páginas HTML. <br>
+   
+   <p>A linguagem CSS funciona através de regras com o principal objetivo de estilizar visualmente o conteúdo HTML da página. <br>
+   Com regras, podemos selecionar um ou mais elementos em uma página e aplicar estilos.</p>
+   </p> 
+   <ol>
+       <li><strong>CSS Inline (No Elemento):</strong> Aplicando a estilização da página por a regras do css diretamente na tag aplicando a palavra "style"</li>
+            <pre>
+                <code>
+                    < h1 style="color: blue;" >Título Azul < /h1 >
+                </code>
+            </pre>
+       <li><strong> CSS Interno (Na página):</strong>  Insira a tag < style > dentro do < head ></li>
+            <pre>
+                <code>
+                    < head >
+                        < style >
+                            body { background-color: lightblue; }
+                        < /style >
+                    < /head >
+                </code>
+            </pre>
+       <li><strong> CSS Externo (Recomendado):</strong></li> <br>
+                    Crie um arquivo .css (ex: style.css)<br>
+                    Adicione a tag < link > dentro do < head > no seu HTML: <br>
+            <pre>
+                <code> 
+                    < head >
+                        < link rel="stylesheet" href="style.css" >
+                    < /head >
+                </code>
+            </pre>
+   </ol>
+      <p style="color: #ba0d0d"> Paragrado estilizado em css</p>
+
+</body>
+</html>
