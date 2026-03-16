@@ -1,4 +1,117 @@
 /*Seletor por TAG - de acordo com a tag de formatação é incluso a estilização*/
-p {
-    color: #f81515
+h1{
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black;
+}
+.detalhe {
+    color: blue
+
+    }
+.subtitulo{
+    font-size: 16px;
+    font-weight: bold;
+    }
+
+.texto_explicativo{
+        font-size: 14px;
+    }
+
+.header{
+    background-color: yellow;
+    position: sticky;
+    position: -webkit-stick;
+    top: 0;
+    border: solid 1px #000;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    
+    }
+
+.relativo{
+    position: relative;
+    height: 100px;
+    background-color:blue;
+    }
+
+.absoluto{
+    position: absolute;
+    height: 20px;
+    background-color: red;
+    top: 0px;
+    bottom: 0px;
+    right: 10px;
+    width: 70px;
+    }
+
+.fixed{
+    width:50px;
+    height:50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    /* Define a altura das linhas e largura das colunas */
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto auto 1fr auto;
+    
+    /* Desenha o mapa do layout */
+    grid-template-areas: 
+        "header header header"
+        "menu menu menu"
+        "left content right"
+        "footer footer footer";
+    
+    gap: 10px; /* Espaço entre os blocos */
+    min-height: 90vh;
+}
+
+/* Estilização Comum dos Blocos */
+header, nav, aside, main, footer {
+    background-color: #d1d5db; /* Cor cinza clara do fundo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #9ca3af;
+    color: #333;
+}
+
+/* Atribuindo cada classe à sua área no Grid */
+.header    { grid-area: header; font-weight: bold; }
+.menu      { grid-area: menu; }
+.left-col  { grid-area: left; }
+.content   { grid-area: content; background-color: #e5e7eb; min-height: 300px; }
+.right-col { grid-area: right; }
+.footer    { grid-area: footer; }
+
+/* Responsividade: Para telas de celular */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "menu"
+            "content"
+            "left"
+            "right"
+            "footer";
+    }
 }

@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><p align="center">  Aplicando CSS em uma página HTML 
+    <header class="header"> Menu do Topo</header>
+    <h1><p  Aplicando CSS em uma página HTML 
     <img src="css.logo].png" alt="LogoCSS" width="70" height="50" style="float: Left; margin: 5px;" title="LogoCSS">
     </h1><br><hr></p>
-   <p>O Termo em inglês CSS significa <strong>Cascading Style Sheets (Folhas de Estilo em Cascata)</strong>.<br>
+   <p class="detalhe">O Termo em inglês CSS significa <strong>Cascading Style Sheets (Folhas de Estilo em Cascata)</strong>.<br>
     Assim como a HTML, não é uma linguagem de programação. CSS é uma linguagem de folha de estilos usada amplamente na web e criada com o propósito principal de estilizar páginas HTML. <br>
-   
-   <p>A linguagem CSS funciona através de regras com o principal objetivo de estilizar visualmente o conteúdo HTML da página. <br>
-   Com regras, podemos selecionar um ou mais elementos em uma página e aplicar estilos.</p>
-   </p> 
+   A linguagem CSS funciona através de regras com o principal objetivo de estilizar visualmente o conteúdo HTML da página. <br>
+   Com regras, podemos selecionar um ou mais elementos em uma página e aplicar estilos.   </p> 
    <ol>
        <li><strong>CSS Inline (No Elemento):</strong> Aplicando a estilização da página por a regras do css diretamente na tag aplicando a palavra "style"</li>
             <pre>
@@ -87,9 +86,68 @@
                 </div>
 
         </div>
-
-       
-
         
+        <div class="content">
+            <img class="imagem-flutuante" src="">
+            <p class="texto1">BLA</p>
+            <p class="texto2">BLA2</p>
+            <p class="texto">Texto3</p>
+            CSS GRID Layout
+
+            Tamanhos de Telas de acordo com a resolução 320, 480, 720, 768, 900,1024, 1200.
+            Construir uma pagina web de acordo com a estrutura web 
+            Com 3 dispositivos diferentes: Os elementos tem estruturas diferentes. 
+            Possui uma organização na tela de acordo com o dispositivo que estiver utilizando.
+            Mobile - colocar a imagem
+            Tablet
+            Desktop
+
+            Fluxo normal
+
+            Float e POsition
+            Criada para imagem e o texto ficar flutuando de acordo com a disposição da imagem
+            Recebem os valores Left, right, none, inherith, 
+
+            Clear, se posiciona de acordo - Both, Right, left, none 
+
+            <div>
+                <h1>Posicionamento das Divs</h1>
+            </div>
+
+            <div class="static">
+                <p class="subtitulo"> Posicionamento Static </p>
+                <p class="texto_explicativo">Este é o comportamento de posicionamento padrão que os seus elementos vão aderir ao serem adicionados na página. <br>
+                Em termos práticos isso significa que se nenhuma regra é associada de forma explícita, este valor é assumido por definição.<br>
+                O static simplesmente indica aos elementos que eles devem seguir o fluxo definido declarado no documento (HTML).<br>
+                Ou seja, se tivermos três divs declaradas uma após a outra e elas tiverem o static como valor para posicionamento, elas simplesmente serão colocadas uma embaixo da outra na renderização. <br></p>
+               
+                <p class="subtitulo"> Posicionamento Absoluto </p>
+                <p class="texto_explicativo">Este tipo faz que o elemento designado seja totalmente retirado do fluxo do documento, ou seja, os elementos ao redor reagem como se este elemento realmente não existisse.<br>
+                        Definindo a distancia para o ancestral pelos atributos: Right, left, top, botton. Assim o elemento seja posicionado de forma absoluta em relação aos seus elementos pais (ou em outras palavras, seu container). <br>
+                        No entanto, aqui vai a grande sacada: o elemento definido com posição absoluta só vai ser posicionado em relação a um elemento que não tenha uma posição estática. <br>
+                        Caso não o encontre, o elemento sobe a sua árvore até encontrar um elemento que satisfaça essa condição.</p>
+                  
+                <p class="subtitulo"> Posicionamento Fixed </p>
+                <p class="texto_explicativo">O posicionamento fixo está associado ao documento como um todo, ao contrário do posicionamento absoluto que leva em consideração um outro elemento. <br>
+                    Ao usar o fixed em um elemento, ele terá sempre o mesmo posicionamento, mesmo levando em conta o scroll da página, considerando o HTML como um todo. <br>
+                    Em outras palavras, um elemento com posicionamento fixo tem um comportamento parecido com o que vimos no exemplo do posicionamento absoluto quando não há nenhum elemento de referência. <br>
+            </div>
+                <div class="absoluto"> AQUI</div>
+                    <div class="relativo">Mantém o elemento
+                    </div>
+                </div>
+           
+            <div class = "fixed"> Remove o elemente no container inci
+            </div>
+
+            <div class="stick">
+                <p>Testes3 Testes3 Testes3 Testes3 </p>
+            </div>
+
+            <div class="grid">Testes4
+            </div>  
+
+        </div>
+
 </body>
 </html>
